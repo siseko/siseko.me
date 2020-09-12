@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+
+html {
+  font-size: 14px;
+  @include respond-to(medium) {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
