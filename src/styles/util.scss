@@ -1,0 +1,46 @@
+@import "./variables.scss";
+
+.bg {
+  &--primary {
+    background-color: $primary;
+  }
+  &--secondary {
+    background-color: $secondary;
+  }
+  &--tertiary {
+    background-color: $tertiary;
+  }
+  &--white {
+    background-color: #fff;
+  }
+}
+
+.fill {
+  &--white {
+    fill: white;
+  }
+  &--secondary {
+    fill: $secondary;
+    svg {
+      fill: $secondary;
+    }
+  }
+}
+
+.hr {
+  background-color: $primary;
+  max-width: 8rem;
+  height: 2px;
+}
+
+.profile-image {
+  height: 250px;
+  width: 250px;
+}
+
+.border {
+  &--b {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $secondary;
+  }
+}

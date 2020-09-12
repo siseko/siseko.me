@@ -1,19 +1,22 @@
 <script lang="ts">
-  export let name: string;
+  import Main from "./Main.svelte";
+  import Side from "./Side/Side.svelte";
+
+  let hideSide;
+
+  let onMenuClick = function () {
+    hideSide = !hideSide;
+  };
+  let onSideHide = function () {
+    hideSide = true;
+  };
 </script>
 
 <style type="text/scss" global>
-  @import "village-components/dist/index.css";
-  @import "village-components/dist/breakpoints.scss";
-  
   @import "./styles/index.scss";
-
 </style>
 
-<main>
-  <h1>Hello {name}!</h1>
-  <p class="padding--sm">
-    Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
-    how to build Svelte apps.
-  </p>
+<main class="display--flex">
+  <Side hide={hideSide} {onSideHide} />
+  <Main {onMenuClick} />
 </main>

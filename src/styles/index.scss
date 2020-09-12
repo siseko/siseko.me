@@ -1,1 +1,57 @@
+@import "village-components/dist/index.css";
 @import "./typography.scss";
+@import "./util.scss";
+
+main {
+  max-width: map-get($map: $breakpoints, $key: large);
+  @include respond-to(medium) {
+    margin: 4rem auto;
+  }
+}
+
+.side {
+  max-width: 320px;
+  position: absolute;
+  z-index: 1;
+  @include respond-to(medium) {
+    position: relative;
+  }
+
+  .close {
+    @include respond-to(medium) {
+      display: none;
+    }
+  }
+
+  li {
+    padding: 0.35rem 0;
+    span {
+      padding-right: 0.75rem;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.main {
+  flex: 1;
+}
+
+.menu {
+  animation: grow cubic-bezier(0.65, 0.05, 0.36, 1) 1.5s;
+  transform: scale(1.5);
+  @include respond-to(medium) {
+    display: none;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(2.5);
+  }
+}
