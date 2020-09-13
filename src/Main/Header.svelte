@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Icon from "./Icon.svelte";
+  import Icon from "../Icon.svelte";
 
   export let onMenuClick;
 </script>
@@ -10,7 +10,7 @@
   <div class="hr margin--auto" />
   <h2 class="margin-v--md margin-b--none">Software Engineer</h2>
   <div class="menu margin-t--md">
-    <i class="padding-t--md" on:click={onMenuClick}>
+    <i class="padding-t--md cursor--pointer" on:click={onMenuClick}>
       <Icon name="menu" className="fill--white" />
     </i>
   </div>

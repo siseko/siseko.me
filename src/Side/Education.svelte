@@ -2,7 +2,7 @@
   import Icon from "../Icon.svelte";
 </script>
 
-<div class="text--thin">
+<div class="text--thin margin-t--xlg">
   <h3 class="text--uppercase border--b">Education</h3>
   <ul>
     <li class="margin-t--md lh">

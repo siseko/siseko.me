@@ -1,0 +1,55 @@
+.side {
+  max-width: 320px;
+  position: absolute;
+  z-index: 1;
+  @include respond-to(tablet) {
+    position: relative;
+  }
+
+  .close {
+    @include respond-to(tablet) {
+      display: none;
+    }
+  }
+
+  li {
+    padding: 0.35rem 0;
+    span {
+      padding-right: 0.75rem;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .skills {
+    li {
+      background-color: $secondary;
+      color: #fff;
+      border-radius: 2px;
+      padding: 0.25rem 0.5rem;
+      margin: 0 0 0.25rem 0.25rem;
+      font-size: 0.8rem;
+
+      span {
+        padding-right: 0;
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: white;
+      }
+    }
+  }
+
+  &-overlay {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: lighten($color: transparentize($color: $tertiary, $amount: 0.25), $amount: 15);
+  }
+}

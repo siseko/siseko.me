@@ -2,7 +2,7 @@
   import Icon from "../Icon.svelte";
 </script>
 
-<div class="margin-v--xlg text--thin padding-v--sm">
+<div class="margin-t--xlg text--thin padding-v--sm">
   <h3 class="text--uppercase margin-v--md border--b">Personal Information</h3>
   <ul class="padding-v--sm">
     <li>

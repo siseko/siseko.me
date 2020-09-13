@@ -2,6 +2,7 @@
   import Icon from "../Icon.svelte";
   import Personal from "./Personal.svelte";
   import Education from "./Education.svelte";
+  import Expertise from "./Expertise.svelte";
 
   export let hide: boolean;
   export let onSideHide: () => void;
@@ -12,7 +13,7 @@
 </script>
 
 <section class="side bg--tertiary padding--lg" class:display--none={hide}>
-  <div class="text--right close" on:click={() => onSideHide()}>
+  <div class="text--right close cursor--pointer" on:click={() => onSideHide()}>
     <Icon name="cross" />
   </div>
   <img
@@ -21,4 +22,5 @@
     class="border-rad--50 profile-image display--block margin--auto" />
   <Personal />
   <Education />
+  <Expertise />
 </section>

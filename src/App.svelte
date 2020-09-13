@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Main from "./Main.svelte";
+  import Main from "./Main/Main.svelte";
   import Side from "./Side/Side.svelte";
 
   let hideSide;
@@ -19,4 +19,7 @@
 <main class="display--flex">
   <Side hide={hideSide} {onSideHide} />
   <Main {onMenuClick} />
+  {#if !hideSide && window.innerWidth < 1024}
+    <div class="side-overlay" />
+  {/if}
 </main>
