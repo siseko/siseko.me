@@ -4,7 +4,7 @@
   export let timePeriod: string;
 </script>
 
-<div class="padding-b--md padding-t--lg">
+<div class="padding-b--xlg">
   <div class="text--uppercase text--lg">{title}</div>
   <span class="text--sm">{company} {timePeriod}</span>
   <slot />

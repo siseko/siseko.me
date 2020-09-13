@@ -15,7 +15,7 @@
             markets across the globe. My main focus is the frontend component
             library. Betway has been aggressively expanding its business into
             more markets, the library helps maintain consistency across the
-            brand and provides a consistent and repeatable process for building
+            brand and provides a repeatable process for building
             web applications.`,
       responsibilities: [
         `Build the web applications for Betway Mozambique and Betway Bulgaria`,
@@ -27,16 +27,17 @@
       title: "Software Developer",
       company: "PSG Wealth",
       timePeriod: "October 2018 - April 2019",
-      summary: `I build and maintain web applications for Betway's growing list of
-            markets across the globe. My main focus is the frontend component
-            library. Betway has been aggressively expanding its business into
-            more markets, the library helps maintain consistency across the
-            brand and provides a consistent and repeatable process for building
-            web applications.`,
+      summary: `My role was to provide a solution to the manual process of third party 
+            tax submissions to the South Africa Revenue Services. This would help to 
+            save the business time and put power back in the hands of the tax managers. As a financial 
+            services provider the business is obliged to provide their clients' transaction data 
+            for every tax year. The business offers varying products from offshore equities, 
+            retirement investement products and pension funds and SARS has different requirements 
+            for each of these.`,
       responsibilities: [
-        `Build the web applications for Betway Mozambique and Betway Bulgaria`,
-        `Add onto and fine-tune the NPM components library`,
-        `Manage CI/CD on Azure DevOps`,
+        `Process and categorize transactions in the millions for the different product types`,
+        `Move tax businnes rules contained in stored procedures to the code`,
+        `Provide guidance and mentorship to juniors in the team`,
       ],
     },
   ];
