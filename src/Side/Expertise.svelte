@@ -1,49 +1,57 @@
 <script>
   import Icon from "../Icon.svelte";
+  import Skill from "./Skill.svelte";
+
+  let skills = [
+    [
+      { icon: "javascript", name: "JavaScript" },
+      { icon: "", name: "TypeScript" },
+      { icon: "html5", name: "HTML 5" },
+      { icon: "css3", name: "CSS 3" },
+    ],
+    [
+      { icon: "angular", name: "Angular" },
+      { icon: "react", name: "React" },
+      { icon: "", name: "Svelte" },
+      { icon: "sass", name: "Sass" },
+      { icon: "", name: "RxJS" },
+    ],
+    [
+      { icon: "", name: "Java" },
+      { icon: "nodejs", name: "Node.js" },
+      { icon: "", name: "C#" },
+    ],
+    [
+      { icon: "", name: "Spring" },
+      { icon: "", name: ".NET Core" },
+      { icon: "", name: "NestJS" },
+      { icon: "", name: "Express" },
+    ],
+  ];
 </script>
 
 <div class="text--thin margin-t--xlg">
   <h3 class="text--uppercase border--b">Expertise</h3>
   <h4 class="margin-b--sm text--regular">Frontend Development</h4>
   <ul class="grid skills">
-    <li>
-      <Icon name="javascript" className="v-align--middle" />
-      JavaScript
-    </li>
-    <li>TypeScript</li>
-    <li>
-      <Icon name="html5" className="v-align--middle" />HTML 5
-    </li>
-    <li>
-      <Icon name="css3" className="v-align--middle" />CSS 3
-    </li>
+    {#each skills[0] as skill}
+      <Skill icon={skill.icon} name={skill.name} />
+    {/each}
   </ul>
   <ul class="grid skills padding-t--sm">
-    <li>
-      <Icon name="angular" className="v-align--middle" />
-      Angular
-    </li>
-    <li>
-      <Icon name="react" className="v-align--middle" />React
-    </li>
-    <li>Svelte</li>
-    <li>
-      <Icon name="sass" className="v-align--middle" />Sass
-    </li>
-    <li>RxJS</li>
+    {#each skills[1] as skill}
+      <Skill icon={skill.icon} name={skill.name} />
+    {/each}
   </ul>
   <h4 class="margin-v--sm text--regular">Backend Development</h4>
   <ul class="grid skills">
-    <li>Java</li>
-    <li>
-      <Icon name="nodejs" className="v-align--middle" />Node.js
-    </li>
-    <li>C#</li>
+    {#each skills[2] as skill}
+      <Skill icon={skill.icon} name={skill.name} />
+    {/each}
   </ul>
   <ul class="grid skills padding-t--sm">
-    <li>Spring</li>
-    <li>.NET Core</li>
-    <li>NestJS</li>
-    <li>Express</li>
+    {#each skills[3] as skill}
+      <Skill icon={skill.icon} name={skill.name} />
+    {/each}
   </ul>
 </div>

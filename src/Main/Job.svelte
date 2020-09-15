@@ -6,6 +6,6 @@
 
 <div class="padding-b--xlg">
   <div class="text--uppercase text--lg">{title}</div>
-  <span class="text--sm">{company} {timePeriod}</span>
+  <span class="text--sm">{company} | {timePeriod}</span>
   <slot />
 </div>

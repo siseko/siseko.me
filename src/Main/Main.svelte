@@ -32,12 +32,39 @@
             save the business time and put power back in the hands of the tax managers. As a financial 
             services provider the business is obliged to provide their clients' transaction data 
             for every tax year. The business offers varying products from offshore equities, 
-            retirement investement products and pension funds and SARS has different requirements 
-            for each of these.`,
+            retirement investement products and pension funds and the different requirements 
+            for each of these needed to be catered for.`,
       responsibilities: [
         `Process and categorize transactions in the millions for the different product types`,
-        `Move tax businnes rules contained in stored procedures to the code`,
+        `Move tax business rules contained in stored procedures to the code`,
+        `Deploy docker services onto Azure Kubernetes Service`,
         `Provide guidance and mentorship to juniors in the team`,
+      ],
+    },
+    {
+      title: "Software Developer",
+      company: "Absa Bank",
+      timePeriod: "March 2018 - October 2018",
+      summary: `I was mainly responsible for rewriting the backend services supporting the bank's rest of Africa 
+            online banking platforms. With the bank's split from its then biggest shareholder, Barclays PLC, came a few rewrites and platform migrations. 
+            To support this, I successfully migrated applications from Barclay's infrastructure onto Absa's infrastructure.`,
+      responsibilities: [
+        `Integrate with downstream SOAP services and expose RESTful services for frontend consumption`,
+        `Dockerize and deploy newly written services onto OpenShift`,
+        `Migrate existing applications onto RHEL 7`,
+      ],
+    },
+    {
+      title: "Software Engineer",
+      company: "Entelect",
+      timePeriod: "February 2016 - February 2018",
+      summary: `I was mainly responsible for rewriting the backend services supporting the bank's rest of Africa 
+            online banking platforms. With the bank's split from its then biggest shareholder, Barclays PLC, came a few rewrites and platform migrations. 
+            To support this, I successfully migrated applications from Barclay's infrastructure onto Absa's infrastructure.`,
+      responsibilities: [
+        `Integrate with downstream SOAP services and expose RESTful services for frontend consumption`,
+        `Dockerize and deploy newly written services onto OpenShift`,
+        `Migrate existing applications onto RHEL 7`,
       ],
     },
   ];

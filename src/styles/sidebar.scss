@@ -14,9 +14,6 @@
 
   li {
     padding: 0.35rem 0;
-    span {
-      padding-right: 0.75rem;
-    }
 
     a {
       text-decoration: underline;
@@ -45,7 +42,7 @@
   }
 
   &-overlay {
-    position: absolute;
+    position: fixed;
     right: 0;
     left: 0;
     top: 0;
