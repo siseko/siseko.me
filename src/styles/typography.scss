@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
 @import "./breakpoints.scss";
+@import "./variables.scss";
 
 html {
   font-size: 16px;
@@ -21,4 +22,12 @@ h1 {
 ol {
   list-style: disc;
   list-style-position: inside;
+}
+
+.text--link {
+  color: $accent;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

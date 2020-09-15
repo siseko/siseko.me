@@ -10,6 +10,10 @@
   let onSideHide = function () {
     hideSide = true;
   };
+
+  let closeSide = function () {
+    hideSide = true;
+  };
 </script>
 
 <style type="text/scss" global>
@@ -20,6 +24,6 @@
   <Side hide={hideSide} {onSideHide} />
   <Main {onMenuClick} />
   {#if !hideSide && window.innerWidth < 1024}
-    <div class="side-overlay" />
+    <div class="side-overlay" on:click={closeSide} />
   {/if}
 </main>

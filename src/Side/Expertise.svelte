@@ -15,6 +15,7 @@
       { icon: "", name: "Svelte" },
       { icon: "sass", name: "Sass" },
       { icon: "", name: "RxJS" },
+      { icon: "", name: "Redux" },
     ],
     [
       { icon: "", name: "Java" },

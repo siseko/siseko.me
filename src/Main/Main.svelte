@@ -9,6 +9,7 @@
     {
       title: "Frontend Developer",
       company: "Osiris Trading",
+      website: "",
       timePeriod: "July 2019 - Current",
       summary: `I build and maintain web applications for Betway's growing list of
             markets across the globe. My main focus is the frontend component
@@ -21,11 +22,12 @@
         `Add onto and fine-tune the NPM components library`,
         `Manage CI/CD on Azure DevOps`,
       ],
-      tech: [`Angular`, `Typescript`, `SASS`],
+      tech: [`Angular`, `Typescript`, `SASS`, `Azure DevOps`],
     },
     {
       title: "Software Developer",
       company: "PSG Wealth",
+      website: "",
       timePeriod: "October 2018 - April 2019",
       summary: `My role was to provide a solution to the manual process of third party 
             tax submissions to the South Africa Revenue Services. This would help to 
@@ -40,11 +42,12 @@
         `Deploy docker services onto Azure Kubernetes Service`,
         `Provide guidance and mentorship to juniors in the team`,
       ],
-      tech: [`.NET Core 2`, `Angular`, `Docker`],
+      tech: [`.NET Core 2`, `Angular`, `Docker`, `Azure DevOps`],
     },
     {
       title: "Software Developer",
       company: "Absa Bank",
+      website: "",
       timePeriod: "March 2018 - October 2018",
       summary: `I was mainly responsible for rewriting the backend services supporting the bank's rest of Africa 
             online banking platforms. With the bank's split from its then biggest shareholder, Barclays PLC, came a few rewrites and platform migrations. 
@@ -54,11 +57,12 @@
         `Dockerize and deploy newly written services onto OpenShift`,
         `Migrate existing applications onto RHEL 7`,
       ],
-      tech: [`Spring Boot`, `Angular`, `Docker`],
+      tech: [`Spring Boot`, `Angular`, `Docker`, `OpenShift`],
     },
     {
       title: "Software Engineer",
       company: "Entelect",
+      website: "",
       timePeriod: "February 2016 - February 2018",
       summary: `During my tenure at Entelect I worked for their biggest client, Standard Bank. 
             I worked on their Online Banking for Business product, joining at an early stage to 
@@ -71,11 +75,12 @@
         `Run code critique sessions to ensure quality in the code base`,
         `I kicked off the tough process of upgrading from AngularJS to Angular 2`,
       ],
-      tech: [`Java`, `AngularJS`, `Cucumber`],
+      tech: [`Java`, `AngularJS`, `Angular`, `Cucumber`],
     },
     {
       title: "Software Developer",
       company: "DStv Digital Media",
+      website: "",
       timePeriod: "January 2014 - January 2016",
       summary: `I played a key role in the success of DStv BoxOffice in Africa. 
             In the time I was there we rolled out to 12 African countries, migrated South Africa 
@@ -86,9 +91,35 @@
         `Build a reliable and perfomant application that caters for up to 30 thousand transactions per minute`,
         `Create ETL jobs to migrate the data of more than a million customers`,
         `Built a graphing application for the business to track rental statistics`,
-        `Set up a dashboard to help customer service representatives resolve customer issues quicker`,
+        `Set up a dashboard to help customer service resolve customer issues quicker`,
       ],
-      tech: [`Java`, `Spring`, `ActiveMQ`],
+      tech: [`Java`, `Spring`, `ActiveMQ`, `Node.js`],
+    },
+  ];
+
+  const personal = [
+    {
+      title: "",
+      company: "Village Web",
+      timePeriod: "July 2018 - Current",
+      website: "https://www.villageweb.co.za",
+      summary: `Village Web seeks to bring back the sense of community that has always been at the 
+            core of most African cultures. Targeted at residents in living estates, the project encourages 
+            the sharing of resources amongst residents therefore allowing them to cut down on living expenses. 
+            Leveraging off the network of residents around you, you can share your satellite TV costs, 
+            WiFi costs, share your ride, find a tennis buddy, find a professional and many more.`,
+      responsibilities: [
+        `I take care of the entire tech stack from setting up the infrastructure all the way to the UI and UX`,
+        `Working closely with the Managing Director to ensure his vision for the product is realised through the application`,
+      ],
+      tech: [
+        `React`,
+        `PostgreSQL`,
+        `Spring Boot`,
+        `Docker`,
+        `Cypress`,
+        `Nginx`,
+      ],
     },
   ];
 </script>
@@ -115,27 +146,12 @@
     </Section>
     <Section title="Experience">
       {#each jobs as job}
-        <Job
-          title={job.title}
-          company={job.company}
-          timePeriod={job.timePeriod}>
-          <div class="text--thin padding-t--md">
-            <p>{job.summary}</p>
-            <span class="text--regular">Responsibilities</span>
-            <ol class="padding-v--sm">
-              {#each job.responsibilities as text}
-                <li>{text}</li>
-              {/each}
-            </ol>
-            <span class="text--regular">
-              Tech used: {#each job.tech as tech, i}
-                <span class="text--thin">
-                  {tech}{#if i !== job.tech.length - 1},{/if}
-                </span>
-              {/each}
-            </span>
-          </div>
-        </Job>
+        <Job {job} />
+      {/each}
+    </Section>
+    <Section title="Personal Projects">
+      {#each personal as job}
+        <Job {job} />
       {/each}
     </Section>
   </div>
