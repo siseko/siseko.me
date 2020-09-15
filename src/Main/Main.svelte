@@ -1,5 +1,4 @@
 <script lang="ts">
-  import App from "../App.svelte";
   import Header from "./Header.svelte";
   import Job from "./Job.svelte";
   import Section from "./Section.svelte";
@@ -22,6 +21,7 @@
         `Add onto and fine-tune the NPM components library`,
         `Manage CI/CD on Azure DevOps`,
       ],
+      tech: [`Angular`, `Typescript`, `SASS`],
     },
     {
       title: "Software Developer",
@@ -40,6 +40,7 @@
         `Deploy docker services onto Azure Kubernetes Service`,
         `Provide guidance and mentorship to juniors in the team`,
       ],
+      tech: [`.NET Core 2`, `Angular`, `Docker`],
     },
     {
       title: "Software Developer",
@@ -53,19 +54,41 @@
         `Dockerize and deploy newly written services onto OpenShift`,
         `Migrate existing applications onto RHEL 7`,
       ],
+      tech: [`Spring Boot`, `Angular`, `Docker`],
     },
     {
       title: "Software Engineer",
       company: "Entelect",
       timePeriod: "February 2016 - February 2018",
-      summary: `I was mainly responsible for rewriting the backend services supporting the bank's rest of Africa 
-            online banking platforms. With the bank's split from its then biggest shareholder, Barclays PLC, came a few rewrites and platform migrations. 
-            To support this, I successfully migrated applications from Barclay's infrastructure onto Absa's infrastructure.`,
+      summary: `During my tenure at Entelect I worked for their biggest client, Standard Bank. 
+            I worked on their Online Banking for Business product, joining at an early stage to 
+            build most of the core functionality and implement role based access control across 
+            the entire online banking product.
+      `,
       responsibilities: [
-        `Integrate with downstream SOAP services and expose RESTful services for frontend consumption`,
-        `Dockerize and deploy newly written services onto OpenShift`,
-        `Migrate existing applications onto RHEL 7`,
+        `Roll out a beta version of the platform to thirty thousand pre-selected customers`,
+        `Implement role based access control to restrict system access by business employees`,
+        `Run code critique sessions to ensure quality in the code base`,
+        `I kicked off the tough process of upgrading from AngularJS to Angular 2`,
       ],
+      tech: [`Java`, `AngularJS`, `Cucumber`],
+    },
+    {
+      title: "Software Developer",
+      company: "DStv Digital Media",
+      timePeriod: "January 2014 - January 2016",
+      summary: `I played a key role in the success of DStv BoxOffice in Africa. 
+            In the time I was there we rolled out to 12 African countries, migrated South Africa 
+            to a new platform and drastically reduced rental failure rates. I resolved issues with
+            concurrency and performance and led the team for months when we had no Seniors.
+      `,
+      responsibilities: [
+        `Build a reliable and perfomant application that caters for up to 30 thousand transactions per minute`,
+        `Create ETL jobs to migrate the data of more than a million customers`,
+        `Built a graphing application for the business to track rental statistics`,
+        `Set up a dashboard to help customer service representatives resolve customer issues quicker`,
+      ],
+      tech: [`Java`, `Spring`, `ActiveMQ`],
     },
   ];
 </script>
@@ -104,6 +127,13 @@
                 <li>{text}</li>
               {/each}
             </ol>
+            <span class="text--regular">
+              Tech used: {#each job.tech as tech, i}
+                <span class="text--thin">
+                  {tech}{#if i !== job.tech.length - 1},{/if}
+                </span>
+              {/each}
+            </span>
           </div>
         </Job>
       {/each}

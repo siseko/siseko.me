@@ -27,6 +27,23 @@
       { icon: "", name: "NestJS" },
       { icon: "", name: "Express" },
     ],
+    [
+      { icon: "", name: "MySQL" },
+      { icon: "", name: "PostgreSQL" },
+      { icon: "", name: "MSSQL" },
+    ],
+    [
+      { icon: "", name: "Linux" },
+      { icon: "", name: "Ansible" },
+      { icon: "", name: "Docker" },
+      { icon: "", name: "Nginx" },
+      { icon: "", name: "CircleCI" },
+      { icon: "", name: "Kubernetes" },
+    ],
+    [
+      { icon: "", name: "Cypress" },
+      { icon: "", name: "Protractor" },
+    ],
   ];
 </script>
 
@@ -51,6 +68,24 @@
   </ul>
   <ul class="grid skills padding-t--sm">
     {#each skills[3] as skill}
+      <Skill icon={skill.icon} name={skill.name} />
+    {/each}
+  </ul>
+  <h4 class="margin-v--sm text--regular">Databases</h4>
+  <ul class="grid skills">
+    {#each skills[4] as skill}
+      <Skill icon={skill.icon} name={skill.name} />
+    {/each}
+  </ul>
+  <h4 class="margin-v--sm text--regular">DevOps</h4>
+  <ul class="grid skills">
+    {#each skills[5] as skill}
+      <Skill icon={skill.icon} name={skill.name} />
+    {/each}
+  </ul>
+  <h4 class="margin-v--sm text--regular">Testing</h4>
+  <ul class="grid skills">
+    {#each skills[6] as skill}
       <Skill icon={skill.icon} name={skill.name} />
     {/each}
   </ul>

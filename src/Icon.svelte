@@ -5,23 +5,31 @@
   export let name: string;
   let svg: string = "";
 
-  axios
-    .get(`https://res.cloudinary.com/vw/image/upload/icons/${name}.svg`)
-    .then((res) => {
-      svg = res.data;
+  function fetchtIcon() {
+    if (!name) {
+      return;
+    }
 
-      if (className) {
-        const template = document.createElement("template");
-        template.innerHTML = res.data;
+    axios
+      .get(`https://res.cloudinary.com/vw/image/upload/icons/${name}.svg`)
+      .then((res) => {
+        svg = res.data;
 
-        const el = template.content.firstElementChild;
-        el?.classList.add(
-          ...(className?.split(" ").filter((c: string) => !!c) || [])
-        );
+        if (className) {
+          const template = document.createElement("template");
+          template.innerHTML = res.data;
 
-        svg = el?.outerHTML || "";
-      }
-    });
+          const el = template.content.firstElementChild;
+          el?.classList.add(
+            ...(className?.split(" ").filter((c: string) => !!c) || [])
+          );
+
+          svg = el?.outerHTML || "";
+        }
+      });
+  }
+
+  fetchtIcon();
 </script>
 
 {@html svg}
