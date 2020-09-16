@@ -11,15 +11,24 @@
     </li>
     <li>
       <Icon name="envelope" className="fill--secondary v-align--middle" />
-      <a class="padding-l--sm" href="mailto:siseko@villageweb.co.za">siseko@villageweb.co.za</a>
+      <a
+        class="padding-l--sm"
+        href="mailto:siseko@villageweb.co.za"
+        target="_blank">siseko@villageweb.co.za</a>
     </li>
     <li>
       <Icon name="linkedin" className="fill--secondary v-align--middle" />
-      <a class="padding-l--sm" href="www.linkedin.com/in/sisekonomavila">My LinkedIn</a>
+      <a
+        class="padding-l--sm"
+        href="www.linkedin.com/in/sisekonomavila"
+        target="_blank">My LinkedIn</a>
     </li>
     <li>
       <Icon name="github" className="fill--secondary v-align--middle" />
-      <a class="padding-l--sm" href="https://github.com/siseko/">My GitHub</a>
+      <a
+        class="padding-l--sm"
+        href="https://github.com/siseko/"
+        target="_blank">My GitHub</a>
     </li>
     <li>
       <Icon name="phone" className="fill--secondary v-align--middle" />

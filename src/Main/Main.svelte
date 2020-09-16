@@ -114,6 +114,7 @@
       ],
       tech: [
         `React`,
+        `Redux`,
         `PostgreSQL`,
         `Spring Boot`,
         `Docker`,

@@ -5,7 +5,7 @@
 <div class="padding-b--xlg">
   <div class="text--uppercase text--lg">{job.title}</div>
   <span class="text--sm">{job.company} | {job.timePeriod}</span>
-  <div class="padding-t--sm"><a class="text--sm text--link" href={job.website}>{job.website}</a></div>
+  <div class="padding-t--sm"><a class="text--sm text--link" href={job.website} target="_blank">{job.website}</a></div>
   <div class="text--thin padding-t--md">
     <p>{job.summary}</p>
     <span class="text--regular">Responsibilities</span>
