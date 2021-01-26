@@ -2,9 +2,16 @@
   import Main from "./Main/Main.svelte";
   import Side from "./Side/Side.svelte";
 
+  let gtag: any;
+
   let hideSide;
 
   let onMenuClick = function () {
+    gtag("event", "click", {
+      event_category: "sidenav",
+      event_label: "open sidenav",
+      value: "open",
+    });
     hideSide = !hideSide;
   };
   let onSideHide = function () {
