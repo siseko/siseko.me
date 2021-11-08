@@ -130,7 +130,7 @@
   <div class="content">
     <Section title="About">
       <p class="text--thin">
-        A seasoned engineer with a career spanning just over seven years
+        A seasoned engineer with a career spanning just under eight years
         working with South Africa’s biggest companies in financial services and
         media. Currently building a library of frontend components to power the
         growing number of online gambling markets for Betway.
