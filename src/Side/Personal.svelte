@@ -13,8 +13,8 @@
       <Icon name="envelope" className="fill--secondary v-align--middle" />
       <a
         class="padding-l--sm"
-        href="mailto:siseko@villageweb.co.za"
-        target="_blank">siseko@villageweb.co.za</a>
+        href="mailto:siseko@monacodev.co"
+        target="_blank">siseko@monacodev.co</a>
     </li>
     <li>
       <Icon name="linkedin" className="fill--secondary v-align--middle" />
