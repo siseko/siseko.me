@@ -7,7 +7,7 @@
   let hideSide;
 
   let onMenuClick = function () {
-    gtag("event", "click", {
+    gtag && gtag("event", "click", {
       event_category: "sidenav",
       event_label: "open sidenav",
       value: "open",
