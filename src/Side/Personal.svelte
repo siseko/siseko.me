@@ -32,7 +32,7 @@
     </li>
     <li>
       <Icon name="phone" className="fill--secondary v-align--middle" />
-      <span class="padding-l--sm">+27... connect on LinkedIn</span>
+      <span class="padding-l--sm">+27... request by email</span>
     </li>
   </ul>
 </div>
