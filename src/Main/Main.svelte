@@ -8,9 +8,22 @@
   const jobs = [
     {
       title: "Frontend Developer",
+      company: "Absa",
+      website: "",
+      timePeriod: "July 2022 - Current",
+      summary: `As a Digital FX Developer within the Digital Foreign Exchange department at Absa, I am responsible for developing and enhancing specialized FX trading products tailored for our large multinational clients, particularly in Africa. My primary focus is on delivering robust, scalable, and efficient solutions that facilitate critical aspects of foreign exchange trading and analytics.`,
+      responsibilities: [
+        `Develop and maintain the trading applications for both desktop and web, ensuring they deliver a seamless, secure, and responsive user experience. This includes handling trading activities, sourcing FX rates, and managing quoting processes`,
+        `Build and continuously improve dashboards using Grafana that provide essential insights into business performance metrics. This helps in facilitating better decision-making and performance tracking`,
+        `Work closely product development to implement new features, oversee testing phases to ensure product reliability, and address any issues during the deployment phase`,
+      ],
+      tech: [`Angular`, `Typescript`, `Grafana`, `Azure DevOps`],
+    },
+    {
+      title: "Frontend Developer",
       company: "Osiris Trading",
       website: "",
-      timePeriod: "July 2019 - Current",
+      timePeriod: "July 2019 - June 2022",
       summary: `I build and maintain web applications for Betway's growing list of
             markets across the globe. My main focus is the frontend component
             library. Betway has been aggressively expanding its business into
