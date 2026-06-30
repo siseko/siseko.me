@@ -10,7 +10,7 @@
       title: "Senior Frontend Developer",
       company: "BMW Group",
       website: "",
-      timePeriod: "July 2024 - Present",
+      timePeriod: "September 2023 - Present",
       summary: `As a Senior Frontend Developer within BMW's dealer solutions team, I am responsible for developing and maintaining a vehicle handover platform that streamlines the customer delivery process for BMW dealerships across multiple markets. My primary focus is on delivering a robust, scalable solution that ensures all critical checks are completed before vehicle handover while enhancing the overall customer experience.`,
       responsibilities: [
         `Develop and maintain the platform, ensuring optimal performance and UX across desktop and mobile interfaces. The platform manages financial verification, vehicle fault checks, sanctions screening, contract preparation, BMW app account setup, dealer checklists, accessories upselling, and fleet handovers`,
@@ -32,23 +32,9 @@
     },
     {
       title: "Frontend Developer",
-      company: "Absa",
-      website: "",
-      timePeriod: "July 2022 - June 2024",
-      summary:
-        "As a Digital FX Developer at Absa, I worked on the trading platform used by Absa's FX desk to execute currency orders on behalf of clients — correspondent banks, multinational corporations with significant cross-border trade, and institutional investors trading currency pairs. The platform supported the full trade lifecycle from order intake through quoting, execution, and settlement.",
-      responsibilities: [
-        "Built and maintained both the web and Electron desktop trading applications in Angular, enabling traders to manage quoting, rate sourcing, and order execution across a unified codebase",
-        "Led a complex Angular 9 to 14 migration constrained by Absa's internal component framework, requiring careful navigation of breaking changes across the design system",
-        "Built Grafana dashboards providing real-time visibility into trading volumes, execution performance, and business metrics",
-      ],
-      tech: ["Angular", "Typescript", "Electron", "Grafana", "Azure DevOps"],
-    },
-    {
-      title: "Frontend Developer",
       company: "Osiris Trading",
       website: "",
-      timePeriod: "July 2019 - June 2022",
+      timePeriod: "July 2019 - August 2023",
       summary: `I built and maintained web applications for Betway's growing list of
         markets across the globe. My main focus was the frontend component
         library. Betway had been aggressively expanding its business into
@@ -172,14 +158,13 @@
         transactional systems in regulated industries — environments where
         accuracy, compliance, and reliability aren't optional. From processing
         30,000 rental transactions per minute at DStv BoxOffice, to launching
-        Standard Bank's Online Banking for Business, to building FX trading
-        tools for Absa's FX trading desk, to now ensuring sanctions and
+        Standard Bank's Online Banking for Business, to now ensuring sanctions and
         compliance checks are completed before every BMW vehicle handover.
       </p>
       <p class="font-thin">
         I care deeply about domain knowledge. The systems I build serve
         real-world outcomes — compliance requirements being met, tax obligations
-        being reported, trades being executed. — and I treat understanding those
+        being reported — and I treat understanding those
         outcomes as core to my job, not background noise. This is what drives my
         approach to engineering: start from the problem, work backwards into the
         solution.
