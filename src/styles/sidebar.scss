@@ -1,3 +1,7 @@
+@use "./breakpoints" as *;
+@use "./variables" as *;
+@use "sass:color";
+
 .side {
   max-width: 320px;
   position: absolute;
@@ -47,6 +51,6 @@
     left: 0;
     top: 0;
     bottom: 0;
-    background: lighten($color: transparentize($color: $tertiary, $amount: 0.25), $amount: 15);
+    background: color.adjust(color.adjust($tertiary, $alpha: -0.25), $lightness: 15%);
   }
 }

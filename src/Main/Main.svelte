@@ -7,20 +7,57 @@
 
   const jobs = [
     {
+      title: "Senior Frontend Developer",
+      company: "BMW Group",
+      website: "",
+      timePeriod: "July 2024 - Present",
+      summary: `As a Senior Frontend Developer within BMW's dealer solutions team, I am responsible for developing and maintaining a vehicle handover platform that streamlines the customer delivery process for BMW dealerships across multiple markets. My primary focus is on delivering a robust, scalable solution that ensures all critical checks are completed before vehicle handover while enhancing the overall customer experience.`,
+      responsibilities: [
+        `Develop and maintain the platform, ensuring optimal performance and UX across desktop and mobile interfaces. The platform manages financial verification, vehicle fault checks, sanctions screening, contract preparation, BMW app account setup, dealer checklists, accessories upselling, and fleet handovers`,
+        `Implement comprehensive observability solutions using CloudWatch for backend logging and alarms, while leading the implementation of frontend observability to address UX blind spots`,
+        `Develop automation tools and quality-of-life improvements including Microsoft Teams deployment notifications, automated Jira story updates with deployment environment tags, and GitHub PR-to-Jira story linking`,
+        `Design and build CI/CD pipelines that are currently implemented across 8 projects, ensuring consistent deployment workflows and reliable delivery across the entire ecosystem`,
+      ],
+      tech: [
+        `Angular 19`,
+        `TypeScript`,
+        `Signals`,
+        `Tailwind CSS`,
+        `AWS`,
+        `CloudWatch`,
+        `Microsoft Teams API`,
+        `Jira API`,
+        `GitHub API`,
+      ],
+    },
+    {
+      title: "Frontend Developer",
+      company: "Absa",
+      website: "",
+      timePeriod: "July 2022 - June 2024",
+      summary: `As a Digital FX Developer within the Digital Foreign Exchange department at Absa, I was responsible for developing and enhancing specialized FX trading products tailored for large multinational clients, particularly in Africa. My primary focus was on delivering robust, scalable, and efficient solutions that facilitated critical aspects of foreign exchange trading and analytics.`,
+      responsibilities: [
+        `Developed and maintained trading applications for both desktop and web, ensuring they delivered a seamless, secure, and responsive user experience. This included handling trading activities, sourcing FX rates, and managing quoting processes`,
+        `Built and continuously improved dashboards using Grafana that provided essential insights into business performance metrics. This helped facilitate better decision-making and performance tracking`,
+        `Worked closely with product development to implement new features, oversaw testing phases to ensure product reliability, and addressed issues during the deployment phase`,
+      ],
+      tech: [`Angular`, `Typescript`, `Grafana`, `Azure DevOps`],
+    },
+    {
       title: "Frontend Developer",
       company: "Osiris Trading",
       website: "",
-      timePeriod: "July 2019 - Current",
-      summary: `I build and maintain web applications for Betway's growing list of
-            markets across the globe. My main focus is the frontend component
-            library. Betway has been aggressively expanding its business into
-            more markets, the library helps maintain consistency across the
-            brand and provides a repeatable process for building
-            web applications.`,
+      timePeriod: "July 2019 - June 2022",
+      summary: `I built and maintained web applications for Betway's growing list of
+        markets across the globe. My main focus was the frontend component
+        library. Betway had been aggressively expanding its business into
+        more markets, and the library helped maintain consistency across the
+        brand and provided a repeatable process for building
+        web applications.`,
       responsibilities: [
-        `Build the web applications for Betway Mozambique and Betway Bulgaria`,
-        `Add onto and fine-tune the NPM components library`,
-        `Manage CI/CD on Azure DevOps`,
+        `Built web applications for Betway Mozambique and Betway Bulgaria`,
+        `Added onto and fine-tuned the NPM components library`,
+        `Managed CI/CD on Azure DevOps`,
       ],
       tech: [`Angular`, `Typescript`, `SASS`, `Azure DevOps`],
     },
@@ -130,19 +167,30 @@
   <div class="content">
     <Section title="About">
       <p class="text--thin">
-        A seasoned engineer with a career spanning just over eight years
-        working with South Africa’s biggest companies in financial services and
-        media. Currently building a library of frontend components to power the
-        growing number of online gambling markets for Betway.
+        A seasoned engineer with a career spanning over twelve years working
+        with South Africa's biggest companies across financial services, media,
+        and automotive industries. Currently building a comprehensive vehicle
+        handover platform for BMW dealerships that streamlines the customer
+        delivery process through automated checks and workflow management.
       </p>
       <p class="text--thin">
         I have varied experience having helped deal with performance and
-        concurrency issues at DStv’s BoxOffice, then having been one of the
-        initial developers to help launch Standard Bank’s Online Banking For
-        Business. My skills cut across just a single stack, my passion for
-        solving problems and my big picture thinking means I have worked on
-        frontend, various backends, with different operating systems and even
-        delved into the DevOps side of things.
+        concurrency issues at DStv's BoxOffice, then having been one of the
+        initial developers to help launch Standard Bank's Online Banking For
+        Business, and now developing solutions that enhance the automotive
+        customer experience at BMW. My skills cut across multiple stacks, and my
+        passion for solving problems combined with big picture thinking means I
+        have worked on frontend development, various backends, with different
+        operating systems and even delved into the DevOps side of things.
+      </p>
+      <p class="text--thin">
+        Beyond hands-on development, I have built reusable component libraries
+        for Angular projects and spearheaded full project implementations from
+        requirements analysis and technical feasibility through to delivery. I
+        have managed entire software projects independently, including
+        infrastructure setup on AWS and variants and deployment workflow
+        optimization, ensuring projects are delivered on time and to
+        specification.
       </p>
     </Section>
     <Section title="Experience">
@@ -150,10 +198,10 @@
         <Job {job} />
       {/each}
     </Section>
-    <Section title="Personal Projects">
+    <!-- <Section title="Personal Projects">
       {#each personal as job}
         <Job {job} />
       {/each}
-    </Section>
+    </Section> -->
   </div>
 </section>

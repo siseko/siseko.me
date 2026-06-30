@@ -23,8 +23,8 @@
   };
 </script>
 
-<style type="text/scss" global>
-  @import "./styles/index.scss";
+<style lang="scss" global>
+  @use "./styles/index";
 </style>
 
 <main class="display--flex">

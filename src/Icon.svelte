@@ -1,9 +1,11 @@
 <script lang="ts">
   import axios from "axios";
+  import { onDestroy } from "svelte";
 
   export let className: string;
   export let name: string;
   let svg: string = "";
+  let alive = true;
 
   function fetchtIcon() {
     if (!name) {
@@ -13,6 +15,8 @@
     axios
       .get(`https://res.cloudinary.com/vw/image/upload/icons/${name}.svg`)
       .then((res) => {
+        if (!alive) return;
+
         svg = res.data;
 
         if (className) {
@@ -30,6 +34,10 @@
   }
 
   fetchtIcon();
+
+  onDestroy(() => {
+    alive = false;
+  });
 </script>
 
 {@html svg}
