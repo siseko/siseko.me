@@ -14,6 +14,7 @@
         <li>{text}</li>
       {/each}
     </ol>
+    {#if job.tech?.length}
     <span class="text--regular">
       Tech used: {#each job.tech as tech, i}
         <span class="text--thin">
@@ -21,5 +22,6 @@
         </span>
       {/each}
     </span>
+    {/if}
   </div>
 </div>

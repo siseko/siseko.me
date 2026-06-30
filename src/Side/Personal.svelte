@@ -16,13 +16,13 @@
         href="mailto:siseko@monacodev.co"
         target="_blank">siseko@monacodev.co</a>
     </li>
-    <li>
+    <!-- <li>
       <Icon name="github" className="fill--secondary v-align--middle" />
       <a
         class="padding-l--sm"
         href="https://github.com/siseko/"
         target="_blank">My GitHub</a>
-    </li>
+    </li> -->
     <li>
       <Icon name="phone" className="fill--secondary v-align--middle" />
       <span class="padding-l--sm">+27... request by email</span>
