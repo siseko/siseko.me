@@ -17,13 +17,6 @@
         target="_blank">siseko@monacodev.co</a>
     </li>
     <li>
-      <Icon name="linkedin" className="fill--secondary v-align--middle" />
-      <a
-        class="padding-l--sm"
-        href="www.linkedin.com/in/sisekonomavila"
-        target="_blank">My LinkedIn</a>
-    </li>
-    <li>
       <Icon name="github" className="fill--secondary v-align--middle" />
       <a
         class="padding-l--sm"
