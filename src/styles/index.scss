@@ -1,10 +1,12 @@
-@import "village-components/dist/index.css";
-@import "./typography.scss";
-@import "./util.scss";
-@import "./sidebar.scss";
+@use "./reset";
+@use "./typography";
+@use "./util";
+@use "./sidebar";
+@use "./breakpoints" as *;
+@use "sass:map";
 
 main {
-  max-width: map-get($map: $breakpoints, $key: large);
+  max-width: map.get($breakpoints, "large");
   @include respond-to(tablet) {
     margin: 4rem auto;
   }

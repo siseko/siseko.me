@@ -23,7 +23,7 @@
   };
 </script>
 
-<style type="text/scss" global>
+<style lang="scss" global>
   @import "./styles/index.scss";
 </style>
 
