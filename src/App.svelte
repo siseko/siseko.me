@@ -24,7 +24,7 @@
 </script>
 
 <style lang="scss" global>
-  @import "./styles/index.scss";
+  @use "./styles/index";
 </style>
 
 <main class="display--flex">
