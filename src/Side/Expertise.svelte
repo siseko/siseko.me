@@ -64,64 +64,58 @@
   ];
 </script>
 
-<div class="text--thin margin-t--xlg">
-  <h3 class="text--uppercase border--b">Expertise</h3>
-  <h4 class="margin-b--sm text--regular">Core Competencies</h4>
-  <ul class="grid skills">
+<div class="font-thin mt-8">
+  <h3 class="uppercase pb-[10px] border-b border-secondary">Expertise</h3>
+  <h4 class="mb-2 font-normal">Core Competencies</h4>
+  <ul class="flex flex-wrap items-start">
     {#each skills[0] as skill}
       <Skill icon={skill.icon} name={skill.name} />
     {/each}
   </ul>
-  <h4 class="margin-b--sm text--regular padding-t--sm">Frontend Development</h4>
-  <ul class="grid skills">
+  <h4 class="my-2 font-normal">Frontend Development</h4>
+  <ul class="flex flex-wrap items-start">
     {#each skills[1] as skill}
       <Skill icon={skill.icon} name={skill.name} />
     {/each}
   </ul>
-  <ul class="grid skills padding-t--sm">
+  <ul class="flex flex-wrap pt-2">
     {#each skills[2] as skill}
       <Skill icon={skill.icon} name={skill.name} />
     {/each}
   </ul>
-  <h4 class="margin-v--sm text--regular">Backend Development</h4>
-  <ul class="grid skills">
+  <h4 class="my-2 font-normal">Backend Development</h4>
+  <ul class="flex flex-wrap items-start">
     {#each skills[3] as skill}
       <Skill icon={skill.icon} name={skill.name} />
     {/each}
   </ul>
-  <ul class="grid skills padding-t--sm">
+  <ul class="flex flex-wrap pt-2">
     {#each skills[4] as skill}
       <Skill icon={skill.icon} name={skill.name} />
     {/each}
   </ul>
-  <h4 class="margin-v--sm text--regular">Databases</h4>
-  <ul class="grid skills">
+  <h4 class="my-2 font-normal">Databases</h4>
+  <ul class="flex flex-wrap items-start">
     {#each skills[5] as skill}
       <Skill icon={skill.icon} name={skill.name} />
     {/each}
   </ul>
-  <h4 class="margin-v--sm text--regular">DevOps</h4>
-  <ul class="grid skills">
+  <h4 class="my-2 font-normal">DevOps</h4>
+  <ul class="flex flex-wrap items-start">
     {#each skills[6] as skill}
       <Skill icon={skill.icon} name={skill.name} />
     {/each}
   </ul>
-  <h4 class="margin-v--sm text--regular">Monitoring</h4>
-  <ul class="grid skills">
+  <h4 class="my-2 font-normal">Monitoring</h4>
+  <ul class="flex flex-wrap items-start">
     {#each skills[7] as skill}
       <Skill icon={skill.icon} name={skill.name} />
     {/each}
   </ul>
-  <h4 class="margin-v--sm text--regular">APIs</h4>
-  <ul class="grid skills">
+  <h4 class="my-2 font-normal">APIs</h4>
+  <ul class="flex flex-wrap items-start">
     {#each skills[8] as skill}
       <Skill icon={skill.icon} name={skill.name} />
     {/each}
   </ul>
-  <!-- <h4 class="margin-v--sm text--regular">Testing</h4>
-  <ul class="grid skills">
-    {#each skills[9] as skill}
-      <Skill icon={skill.icon} name={skill.name} />
-    {/each}
-  </ul> -->
 </div>

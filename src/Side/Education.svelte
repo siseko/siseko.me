@@ -2,28 +2,28 @@
   import Icon from "../Icon.svelte";
 </script>
 
-<div class="text--thin margin-t--xlg">
-  <h3 class="text--uppercase border--b">Education</h3>
+<div class="font-thin mt-8">
+  <h3 class="uppercase pb-[10px] border-b border-secondary">Education</h3>
   <ul>
-    <li class="margin-t--md lh">
-      <div class="text--regular">
+    <li class="mt-4 leading-5">
+      <div class="font-normal">
         BSc Hons, Computer Science
       </div>
-      <div class="text--sm">
+      <div class="text-[0.95rem]">
         <div>Nelson Mandela University</div>
         <time>2013 - 2014</time>
       </div>
     </li>
-    <li class="margin-t--md lh">
-      <div class="text--regular">BSc, Computer Science</div>
-      <div class="text--sm">
+    <li class="mt-4 leading-5">
+      <div class="font-normal">BSc, Computer Science</div>
+      <div class="text-[0.95rem]">
         <div>Nelson Mandela University</div>
         <time>2010 - 2012</time>
       </div>
     </li>
-    <li class="margin-t--md lh">
-      <div class="text--regular">National Senior Certificate</div>
-      <div class="text--sm">
+    <li class="mt-4 leading-5">
+      <div class="font-normal">National Senior Certificate</div>
+      <div class="text-[0.95rem]">
         <div>Zingisa Comprehensive High School</div>
         <time>2009</time>
       </div>

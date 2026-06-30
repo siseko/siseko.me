@@ -35,13 +35,14 @@
       company: "Absa",
       website: "",
       timePeriod: "July 2022 - June 2024",
-      summary: `As a Digital FX Developer within the Digital Foreign Exchange department at Absa, I was responsible for developing and enhancing specialized FX trading products tailored for large multinational clients, particularly in Africa. My primary focus was on delivering robust, scalable, and efficient solutions that facilitated critical aspects of foreign exchange trading and analytics.`,
+      summary:
+        "As a Digital FX Developer at Absa, I worked on the trading platform used by Absa's FX desk to execute currency orders on behalf of clients — correspondent banks, multinational corporations with significant cross-border trade, and institutional investors trading currency pairs. The platform supported the full trade lifecycle from order intake through quoting, execution, and settlement.",
       responsibilities: [
-        `Developed and maintained trading applications for both desktop and web, ensuring they delivered a seamless, secure, and responsive user experience. This included handling trading activities, sourcing FX rates, and managing quoting processes`,
-        `Built and continuously improved dashboards using Grafana that provided essential insights into business performance metrics. This helped facilitate better decision-making and performance tracking`,
-        `Worked closely with product development to implement new features, oversaw testing phases to ensure product reliability, and addressed issues during the deployment phase`,
+        "Built and maintained both the web and Electron desktop trading applications in Angular, enabling traders to manage quoting, rate sourcing, and order execution across a unified codebase",
+        "Led a complex Angular 9 to 14 migration constrained by Absa's internal component framework, requiring careful navigation of breaking changes across the design system",
+        "Built Grafana dashboards providing real-time visibility into trading volumes, execution performance, and business metrics",
       ],
-      tech: [`Angular`, `Typescript`, `Grafana`, `Azure DevOps`],
+      tech: ["Angular", "Typescript", "Electron", "Grafana", "Azure DevOps"],
     },
     {
       title: "Frontend Developer",
@@ -162,30 +163,30 @@
   ];
 </script>
 
-<section class="main">
+<section class="flex-1">
   <Header {onMenuClick} />
-  <div class="content">
+  <div class="p-8 md:p-16">
     <Section title="About">
-      <p class="text--thin">
-        A seasoned engineer with a career spanning over twelve years working
-        with South Africa's biggest companies across financial services, media,
-        and automotive industries. Currently building a comprehensive vehicle
-        handover platform for BMW dealerships that streamlines the customer
-        delivery process through automated checks and workflow management.
+      <p class="font-thin">
+        A seasoned engineer with over twelve years of experience building
+        transactional systems in regulated industries — environments where
+        accuracy, compliance, and reliability aren't optional. From processing
+        30,000 rental transactions per minute at DStv BoxOffice, to launching
+        Standard Bank's Online Banking for Business, to building FX trading
+        tools for Absa's FX trading desk, to now ensuring sanctions and
+        compliance checks are completed before every BMW vehicle handover.
       </p>
-      <p class="text--thin">
-        I have varied experience having helped deal with performance and
-        concurrency issues at DStv's BoxOffice, then having been one of the
-        initial developers to help launch Standard Bank's Online Banking For
-        Business, and now developing solutions that enhance the automotive
-        customer experience at BMW. My skills cut across multiple stacks, and my
-        passion for solving problems combined with big picture thinking means I
-        have worked on frontend development, various backends, with different
-        operating systems and even delved into the DevOps side of things.
+      <p class="font-thin">
+        I care deeply about domain knowledge. The systems I build serve
+        real-world outcomes — compliance requirements being met, tax obligations
+        being reported, trades being executed. — and I treat understanding those
+        outcomes as core to my job, not background noise. This is what drives my
+        approach to engineering: start from the problem, work backwards into the
+        solution.
       </p>
-      <p class="text--thin">
+      <p class="font-thin">
         Beyond hands-on development, I have built reusable component libraries
-        for Angular projects and spearheaded full project implementations from
+        for Angular projects and led full project implementations from
         requirements analysis and technical feasibility through to delivery. I
         have managed entire software projects independently, including
         infrastructure setup on AWS and variants and deployment workflow

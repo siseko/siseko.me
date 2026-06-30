@@ -23,14 +23,11 @@
   };
 </script>
 
-<style lang="scss" global>
-  @use "./styles/index";
-</style>
 
-<main class="display--flex">
+<main class="flex max-w-[1199px] lg:my-16 lg:mx-auto">
   <Side hide={hideSide} {onSideHide} />
   <Main {onMenuClick} />
   {#if !hideSide && window.innerWidth < 1024}
-    <div class="side-overlay" on:click={closeSide} />
+    <div class="fixed inset-0 bg-[hsla(30,75%,99%,0.75)]" on:click={closeSide} />
   {/if}
 </main>
