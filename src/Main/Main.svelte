@@ -19,7 +19,7 @@
         `Design and build CI/CD pipelines that are currently implemented across 8 projects, ensuring consistent deployment workflows and reliable delivery across the entire ecosystem`,
       ],
       tech: [
-        `Angular 19`,
+        `Angular 22`,
         `TypeScript`,
         `Signals`,
         `Tailwind CSS`,
@@ -31,18 +31,33 @@
       ],
     },
     {
-      title: "Frontend Developer",
-      company: "Absa",
-      website: "",
-      timePeriod: "July 2022 - June 2024",
+      title: "Software Engineer",
+      company: "Mr Yum (now me&u)",
+      website: "https://www.meandu.com",
+      timePeriod: "June 2022 - May 2024",
       summary:
-        "As a Digital FX Developer at Absa, I worked on the trading platform used by Absa's FX desk to execute currency orders on behalf of clients — correspondent banks, multinational corporations with significant cross-border trade, and institutional investors trading currency pairs. The platform supported the full trade lifecycle from order intake through quoting, execution, and settlement.",
+        "Mr Yum is a QR order-and-pay platform for hospitality venues, from single restaurants to multi-vendor food markets like Boxpark. I was on the team that owned venues, integrations and menus, working with colleagues across the UK and Australia and New Zealand. My main job was connecting Mr Yum to the point-of-sale systems venues already ran, so menus synced in and orders flowed back to the kitchen. I also worked on the venue back office and the React guest app.",
       responsibilities: [
-        "Built and maintained both the web and Electron desktop trading applications in Angular, enabling traders to manage quoting, rate sourcing, and order execution across a unified codebase",
-        "Led a complex Angular 9 to 14 migration constrained by Absa's internal component framework, requiring careful navigation of breaking changes across the design system",
-        "Built Grafana dashboards providing real-time visibility into trading volumes, execution performance, and business metrics",
+        "Built and maintained integrations with point-of-sale systems including Toast, Square and Lightspeed, behind a shared integration layer covering menu sync, ordering, bill payment and venue configuration",
+        "Migrated 93 live venues to a POS provider's new menu modifiers model using dual writes and a per-venue feature flag, so rolling back was a flag flip — tested beforehand and used successfully when needed",
+        "Built table sessions and the post-order payment flow that let groups split and settle a bill from their phones",
+        "Moved menu sync onto AWS SQS across three services, releasing one integration at a time to limit risk",
+        "Wrote the technical design and test plan for the Toast integration as part of the push into the US market, working across teams",
+        "Kept releases flowing for the team and gave internal talks on AWS and generative AI",
       ],
-      tech: ["Angular", "Typescript", "Electron", "Grafana", "Azure DevOps"],
+      tech: [
+        "TypeScript",
+        "Node.js",
+        "NestJS",
+        "React",
+        "Prisma",
+        "CockroachDB",
+        "AWS SQS",
+        "S3",
+        "DynamoDB",
+        "Datadog",
+        "GitHub Actions",
+      ],
     },
     {
       title: "Frontend Developer",
@@ -169,29 +184,28 @@
     <Section title="About">
       <p class="font-thin">
         A seasoned engineer with over twelve years of experience building
-        transactional systems in regulated industries — environments where
-        accuracy, compliance, and reliability aren't optional. From processing
-        30,000 rental transactions per minute at DStv BoxOffice, to launching
-        Standard Bank's Online Banking for Business, to building FX trading
-        tools for Absa's FX trading desk, to now ensuring sanctions and
-        compliance checks are completed before every BMW vehicle handover.
+        transactional systems, mostly in regulated industries where accuracy,
+        compliance and reliability aren't optional. That's taken me from
+        processing 30,000 rental transactions per minute at DStv BoxOffice, to
+        launching Standard Bank's Online Banking for Business, to connecting Mr
+        Yum's order-and-pay platform to the point-of-sale systems of hospitality
+        venues across the UK and Australia, to ensuring sanctions and compliance
+        checks are completed before every BMW vehicle handover.
       </p>
       <p class="font-thin">
         I care deeply about domain knowledge. The systems I build serve
-        real-world outcomes — compliance requirements being met, tax obligations
-        being reported, trades being executed. — and I treat understanding those
-        outcomes as core to my job, not background noise. This is what drives my
-        approach to engineering: start from the problem, work backwards into the
-        solution.
+        real-world outcomes — orders reaching the kitchen, compliance
+        requirements being met, tax obligations being reported — and I treat
+        understanding those outcomes as core to my job, not background noise.
+        This is what drives my approach to engineering: start from the problem,
+        work backwards into the solution.
       </p>
       <p class="font-thin">
         Beyond hands-on development, I have built reusable component libraries
         for Angular projects and led full project implementations from
         requirements analysis and technical feasibility through to delivery. I
         have managed entire software projects independently, including
-        infrastructure setup on AWS and variants and deployment workflow
-        optimization, ensuring projects are delivered on time and to
-        specification.
+        infrastructure setup on AWS and deployment workflow optimisation.
       </p>
     </Section>
     <Section title="Experience">

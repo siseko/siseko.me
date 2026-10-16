@@ -5,14 +5,13 @@
   let skills = [
     [
       { icon: "", name: "Full-stack architecture" },
+      { icon: "", name: "Third-party integrations" },
       { icon: "", name: "Component library design" },
+      { icon: "", name: "Technical design docs" },
       { icon: "", name: "Log analysis and alerting" },
       { icon: "", name: "e2e testing" },
-      { icon: "", name: "Test automation" },
       { icon: "", name: "Technical leadership" },
-      { icon: "", name: "Mentoring" },
       { icon: "", name: "Workflow automation" },
-      { icon: "", name: "Tooling" },
       { icon: "", name: "Cloud infra" },
       { icon: "", name: "CI/CD pipelines" },
       { icon: "", name: "Environment management" },
@@ -35,11 +34,14 @@
       { icon: "", name: "Spring" },
       { icon: "", name: "NestJS" },
       { icon: "", name: "Express" },
+      { icon: "", name: "Prisma" },
     ],
     [
       { icon: "", name: "PostgreSQL" },
       { icon: "", name: "MySQL" },
       { icon: "", name: "MSSQL" },
+      { icon: "", name: "CockroachDB" },
+      { icon: "", name: "DynamoDB" },
     ],
     [
       { icon: "", name: "AWS" },
@@ -47,8 +49,6 @@
       { icon: "", name: "Docker" },
       { icon: "", name: "Kubernetes" },
       { icon: "", name: "Github Actions" },
-      { icon: "", name: "Cloudwatch" },
-      { icon: "", name: "Datadog" },
       { icon: "", name: "Terraform" },
     ],
     [
@@ -56,7 +56,6 @@
       { icon: "", name: "Datadog" },
     ],
     [
-      { icon: "", name: "Microsoft Teams" },
       { icon: "", name: "GitHub" },
       { icon: "", name: "Jira" },
     ],
